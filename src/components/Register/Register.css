@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 0 5vh 0;
+  background-color: #4d6e37;
+  color: #ffffef;
+}
+
+/* #4d6e37; */
+
+.logoText {
+  text-align: center;
+  padding-inline: 3vw;
+  font-size: 3.5vw;
+}
+
+.input {
+  padding: 4vh 0 2vh 0;
+  color: #4d6e37;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  gap: 1vh;
+}
+
+.inputForm {
+  height: 4vh;
+  border: 1px solid #4d6e37;
+  padding: 5px;
+}
+
+.inputspan {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vh;
+  font-size: 3vw;
+}
+
+.inputBtn {
+  background-color: #4d6e37;
+  color: #ffffef;
+  font-size: 4vw;
+  margin-top: 1vh;
+  border: 1px solid #4d6e37;
+  padding: 1.5vh 2vw;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.inputLink {
+  text-decoration: none;
+  color: #4d6e37;
+  width: 90vw;
+}
+
+Link {
+  text-decoration: none;
+  color: #4d6e37;
+  width: 90vw;
+}

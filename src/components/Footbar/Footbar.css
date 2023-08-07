@@ -1,0 +1,22 @@
+.footerBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  gap: 3vw;
+  background: #1f332c;
+  padding: 1vh 2vw;
+  color: #f7fae8;
+  padding: 1vh 4vw;
+  /* width: 85vw; */
+}
+
+.footerBarIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
