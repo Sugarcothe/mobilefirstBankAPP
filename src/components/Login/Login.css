@@ -5,6 +5,7 @@
   align-items: center;
   height: "100vh";
   overflow-y: hidden;
+  height: 100%
 }
 
 .logo {
@@ -15,6 +16,7 @@
   padding: 10vh 0 5vh 0;
   background-color: #4d6e37;
   color: #ffffef;
+  height: 20vh;
 }
 
 /* #4d6e37; */
@@ -32,6 +34,7 @@
   flex-direction: column;
   width: 90vw;
   gap: 1vh;
+  height: 40vh;
 }
 
 .inputForm {

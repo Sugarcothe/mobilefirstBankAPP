@@ -5,7 +5,7 @@ import chip from "../assets/img/chip1-removebg-preview.png";
 
 import "./Card.css";
 
-export const Card = () => {
+export const VisaCard = () => {
   return (
     <>
       <div className="ccontainer">

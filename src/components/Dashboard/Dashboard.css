@@ -4,17 +4,11 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: #f7fae8;
-  height: "100vh";
-}
-
-.topBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #1f332c;
-  width: 100vw;
-  height: 7vh;
+  background-color: #f5ffc4;
+  height: 100%;
+  overflow: scroll;
+  gap: 2vh;
+  
 }
 
 .subcontainer {
@@ -22,61 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card {
-  background-color: #1f332c;
-  width: 85vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: #f7fae8;
-  border-radius: 10px;
-  margin: 2vh 0;
-}
-
-.AccountInfo {
-  display: flex;
-  gap: 20vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.accountBal {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: top;
-}
-
-.balance {
-  font-size: 7vw;
-}
-
-.vl {
-  border: 1px solid #f7fae8;
-  width: 70vw;
-  opacity: 0.5;
-}
-.transBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5vw
-}
-
-.transDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3px
-}
-
-.transaction {
-  font-size: 2.5vw;
 }
 
 /* .footerBar {
@@ -93,4 +32,3 @@
   color: #f7fae8;
   padding: 1vh 4vw
 } */
-

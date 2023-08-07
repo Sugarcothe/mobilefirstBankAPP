@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 12vh;
 }
 
 .notificationHeader {
@@ -26,13 +27,14 @@
   display: flex;
   background-color: #1f332c;
   justify-content: space-between;
-  /* gap: 5vw; */
+  height: 3.5vh;
   padding: 1vh 2vw;
-  width: 85vw;
+  width: 80vw;
   border-radius: 5px;
   color: #f7fae8;
   align-items: center;
   margin-top: 1vh;
+  
 }
 
 .notificationInfo {
@@ -43,11 +45,15 @@
 }
 
 .notificationInfoH {
-  font-size: 5vw;
+  font-size: 3.4vw;
+}
+
+.notificationInfoT {
+  font-size: 2.3vw;
 }
 
 .notificationImg {
-  width: 11vw;
+  width: 8vw;
   border-radius: 5px;
   object-fit: cover;
 }
