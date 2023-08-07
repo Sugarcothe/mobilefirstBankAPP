@@ -1,9 +1,7 @@
 import {
     CreditCard,
-  CreditCardOffOutlined,
   PagesOutlined,
   Settings,
-  SettingsApplicationsOutlined,
   StackedBarChartOutlined,
 } from "@mui/icons-material";
 import React from "react";

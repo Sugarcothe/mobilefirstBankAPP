@@ -8,6 +8,7 @@ const Login = () => {
     <div className="container">
       <div className="logo">
         <Logo />
+        <h3>Whallete</h3>
         <p className="logoText">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
           sequi quia consequuntur dolore architecto. Quasi, porro exercitationem

@@ -27,7 +27,7 @@ const Register = () => {
         <input className="inputForm" type="text" placeholder="Phone" />
         <input className="inputForm" type="number" placeholder="Pin" />
         <div className="inputspan">
-          <Link className="inputLink" to="/Login">
+          <Link className="inputLink" to="/">
             <p>Login Now</p>
           </Link>
           <p>Forgot Password?</p>
