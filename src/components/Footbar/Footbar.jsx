@@ -13,19 +13,19 @@ const Footbar = () => {
       <div className="footerBar">
         <div className="footerBarIcons">
           <StackedBarChartOutlined />
-          <span>Charts</span>
+          <span className="footerBarIconsText">Charts</span>
         </div>
         <div className="footerBarIcons">
           <CreditCard />
-          <span>Cards</span>
+          <span className="footerBarIconsText">Cards</span>
         </div>
         <div className="footerBarIcons">
           <PagesOutlined />
-          <span>Pages</span>
+          <span className="footerBarIconsText">Pages</span>
         </div>
         <div className="footerBarIcons">
           <Settings />
-          <span>Settings</span>
+          <span className="footerBarIconsText">Settings</span>
         </div>
       </div>
     </>

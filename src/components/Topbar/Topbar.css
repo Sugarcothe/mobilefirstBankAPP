@@ -8,4 +8,78 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navOpen {
+  transform: translateX(300px); /* Slide the topBar */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Start hidden */
+  width: 300px;
+  height: 100%;
+  background-color: #1f332c;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.sidebarOpen {
+  transform: translateX(300px); /* Slide the sidebar in */
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding-top: 5vh;
+  /* padding-left: 5vh; */
+}
+
+.sideNav {
+  border: 3px solid white;
+  left: 0;
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5ffc4;
+  color: #1f332c;
+  gap: 2vh;
+}
+
+.sideNavProf {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sideNavProfPic {
+  width: 10vw;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6vw;
+  gap: 2vh;
+}
+
+.navMenuHeader {
+  font-size: 5vw;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navMenuItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 4vw
 }

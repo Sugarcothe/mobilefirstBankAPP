@@ -16,11 +16,16 @@
 }
 
 .notificationHeader1 {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .notificationHeaderText {
-  font-size: 3.5vw;
+  font-size: 3vw;
+  cursor: "pointer";
+  background-color: #1f332c;
+  color: white;
+  border: 1px solid #1f332c;
+  padding: 0.5vh;
 }
 
 .notificationTable {
@@ -30,11 +35,10 @@
   height: 3.5vh;
   padding: 1vh 2vw;
   width: 80vw;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #f7fae8;
   align-items: center;
   margin-top: 1vh;
-  
 }
 
 .notificationInfo {

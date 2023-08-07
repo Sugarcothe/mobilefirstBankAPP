@@ -66,10 +66,10 @@ const TransactionTable = () => {
     <>
       <div className="notificationcontainer">
         <div className="notificationHeader">
-          <h1 className="notificationHeader1">Transaction</h1>
-          <p className="notificationHeaderText" onClick={handleViewMore}>
+          <h1 className="notificationHeader1">Transactions</h1>
+          <button className="notificationHeaderText" onClick={handleViewMore}>
             View More
-          </p>
+          </button>
         </div>
 
         {tranData.slice(0, transactionsToShow).map((d, index) => (
