@@ -1,4 +1,4 @@
-import { List, AccountBalanceWallet, Person, Menu, CreditCard, AccountBalance, PieChart, Money, Savings } from "@mui/icons-material";
+import { List, AccountBalanceWallet, Person, Menu, CreditCard, AccountBalance, PieChart, Money, Savings, Chat } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Topbar.css";
 import john from '../assets/img/john.png'
@@ -22,15 +22,8 @@ const Topbar = () => {
             color: "#ffffef",
           }}
         />
-        <Person
-          sx={{
-            border: "1px solid #ffffef",
-            padding: "1vw",
-            fontSize: "5vw",
-            borderRadius: "50%",
-            color: "#ffffef",
-          }}
-        />
+
+        <img className="sideNavProfPic" src={john} alt="human" />
       </div>
       <div className={`sidebar ${isNavbarOpen ? "sidebarOpen" : ""}`}>
         <div className="sideNav">
@@ -59,6 +52,10 @@ const Topbar = () => {
           <div className="navMenuItem">
             <Money />
             <li>Financial Analytics</li>
+          </div>
+          <div className="navMenuItem">
+            <Chat />
+            <li>Customer Care</li>
           </div>
           <div className="navMenuItem">
             <Savings />

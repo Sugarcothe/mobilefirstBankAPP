@@ -1,11 +1,12 @@
 import {
-    CreditCard,
-  PagesOutlined,
-  Settings,
+  CreditCardTwoTone,
+  DescriptionTwoTone,
+  QuestionAnswerTwoTone,
+  SettingsTwoTone,
   StackedBarChartOutlined,
 } from "@mui/icons-material";
 import React from "react";
-import './Footbar.css'
+import "./Footbar.css";
 
 const Footbar = () => {
   return (
@@ -16,15 +17,19 @@ const Footbar = () => {
           <span className="footerBarIconsText">Charts</span>
         </div>
         <div className="footerBarIcons">
-          <CreditCard />
+          <CreditCardTwoTone />
           <span className="footerBarIconsText">Cards</span>
         </div>
         <div className="footerBarIcons">
-          <PagesOutlined />
+          <DescriptionTwoTone />
           <span className="footerBarIconsText">Pages</span>
         </div>
         <div className="footerBarIcons">
-          <Settings />
+          <QuestionAnswerTwoTone />
+          <span className="footerBarIconsText">Chat</span>
+        </div>
+        <div className="footerBarIcons">
+          <SettingsTwoTone />
           <span className="footerBarIconsText">Settings</span>
         </div>
       </div>

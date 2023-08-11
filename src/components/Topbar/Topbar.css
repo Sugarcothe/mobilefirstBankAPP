@@ -39,13 +39,14 @@
 .sideNav {
   border: 3px solid white;
   left: 0;
-  padding: 2vw;
+  padding: 1vw;
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: #f5ffc4;
+  background-color: #d5ec62;
   color: #1f332c;
   gap: 2vh;
+  margin-top: 2vh;
 }
 
 .sideNavProf {
@@ -81,5 +82,5 @@ li {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  gap: 4vw
+  gap: 4vw;
 }
