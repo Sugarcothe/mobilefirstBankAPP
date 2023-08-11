@@ -28,6 +28,7 @@ const Login = () => {
           Login
         </Link>
       </div>
+      <p className="warning">This is for learning purpose and should not adopted or copied without permission</p>
     </div>
   );
 };
