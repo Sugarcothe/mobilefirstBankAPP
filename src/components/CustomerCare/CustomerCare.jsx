@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./CustomerCare.css"; // We'll generate this CSS in the next step
 import Footbar from "../Footbar/Footbar";
+import Topbar from "../Topbar/Topbar";
 
 function CustomerCare() {
   const [messages, setMessages] = useState([
-    { text: "Hello!", sender: "user" },
+    { text: "Hello!, My name is Sarafina", sender: "user" },
     {
       text: "Hi there!, how can we help you, ticket for this chat is #3435627",
       sender: "bot",
@@ -35,6 +36,7 @@ function CustomerCare() {
 
   return (
     <>
+      <Topbar />
       <div className="chat-container">
         <div className="chat-messages">
           {messages.map((message, index) => (
@@ -45,6 +47,7 @@ function CustomerCare() {
         </div>
         <div className="input-container">
           <textarea
+            className="textArea"
             type="text"
             placeholder="Type you issue..."
             value={inputText}

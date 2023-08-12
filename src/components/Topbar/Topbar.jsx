@@ -79,12 +79,12 @@ const Topbar = () => {
             </div>
           </Link>
 
-          <Link className="link" to="/Savings">
+          {/* <Link className="link" to="/Savings">
             <div className="navMenuItem">
               <Savings />
               <li>Savings</li>
             </div>
-          </Link>
+          </Link> */}
 
           <Link className="link" to="/Donation">
             <div className="navMenuItem">

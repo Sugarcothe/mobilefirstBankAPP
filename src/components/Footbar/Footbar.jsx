@@ -1,4 +1,5 @@
 import {
+  CircleTwoTone,
   CreditCardTwoTone,
   DescriptionTwoTone,
   QuestionAnswerTwoTone,
@@ -7,6 +8,7 @@ import {
 } from "@mui/icons-material";
 import React from "react";
 import "./Footbar.css";
+import { yellow } from "@mui/material/colors";
 
 const Footbar = () => {
   return (
@@ -21,8 +23,8 @@ const Footbar = () => {
           <span className="footerBarIconsText">Cards</span>
         </div>
         <div className="footerBarIcons">
-          <DescriptionTwoTone />
-          <span className="footerBarIconsText">Pages</span>
+          <CircleTwoTone sx={{ fontSize: "10vw", color: "#fdc143" }} />
+          <span className="footerBarIconsText">Dashbaord</span>
         </div>
         <div className="footerBarIcons">
           <QuestionAnswerTwoTone />

@@ -13,6 +13,7 @@
 .chat-messages {
   max-height: 300px;
   overflow-y: auto;
+  margin-top: 6vh;
 }
 
 .message {
@@ -42,17 +43,12 @@
   text-align: center;
 }
 
-textarea {
+.textArea {
   width: 75vw;
   height: 7vh;
   border-radius: 5px;
   font-size: 12px;
-}
-input {
-  flex-grow: 1;
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
+  padding: 5px;
 }
 
 button {
