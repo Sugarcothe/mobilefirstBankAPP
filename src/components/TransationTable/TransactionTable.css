@@ -71,7 +71,11 @@
 
 .transCont {
   padding-top: 4vh;
+  height: 110vh;
   background-color: #151515;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
 .transactionDetails {
@@ -82,4 +86,13 @@
   transition: 1s ease-in-out;
   font-size: 3vw;
   border-radius: 0 0 4px 4px;
+}
+
+.notificationHeaderText1 {
+  margin-top: 2vh;
+  padding: 1vh;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 1px solid #1e1e1e;
+  width: 70vw;
 }

@@ -160,7 +160,7 @@ const TransactionTable = () => {
 
   return (
     <>
-      <div className="transCont">
+      <div className="container">
         <Topbar />
         <div className="notificationcontainer">
           <div className="notificationHeader">
@@ -202,7 +202,7 @@ const TransactionTable = () => {
               )}
             </>
           ))}
-          <button className="notificationHeaderText" onClick={handleViewMore}>
+          <button className="notificationHeaderText1" onClick={handleViewMore}>
             View More
           </button>
         </div>
