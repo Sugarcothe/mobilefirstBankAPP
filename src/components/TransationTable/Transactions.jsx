@@ -143,18 +143,19 @@ const TransactionTable = () => {
   const [transactionsToShow, setTransactionsToShow] = useState(
     initialTransactionsToShow
   );
-  const [hoveredTransactionIndex, setHoveredTransactionIndex] = useState(null);
+  const [expandedTransactionIndex, setExpandedTransactionIndex] =
+    useState(null);
 
   const handleViewMore = () => {
     setTransactionsToShow(transactionsToShow + 9);
   };
 
-  const handleTransactionHover = (index) => {
-    setHoveredTransactionIndex(index);
-  };
-
-  const handleTransactionLeave = () => {
-    setHoveredTransactionIndex(null);
+  const handleTransactionClick = (index) => {
+    if (expandedTransactionIndex === index) {
+      setExpandedTransactionIndex(null); // Collapse if already expanded
+    } else {
+      setExpandedTransactionIndex(index);
+    }
   };
 
   return (
@@ -171,8 +172,7 @@ const TransactionTable = () => {
               <div
                 key={index}
                 className="notificationTable"
-                onMouseEnter={() => handleTransactionHover(index)}
-                onMouseLeave={handleTransactionLeave}
+                onClick={() => handleTransactionClick(index)}
               >
                 <img className="notificationImg" src={d.img} alt="" />
                 <div className="notificationInfo">
@@ -189,6 +189,17 @@ const TransactionTable = () => {
                   ${d.price}
                 </p>
               </div>
+              {expandedTransactionIndex === index && (
+                <div className="transactionDetails">
+                  <p>Issue: {d.header}</p>
+                  <p>Desc: {d.text}</p>
+                  <p>
+                    Amt: <span style={{ color: d.color }}>{d.price}</span>
+                  </p>
+                  <p>Date: 4/7/2023</p>
+                  <p>Time: 12:50pm</p>
+                </div>
+              )}
             </>
           ))}
           <button className="notificationHeaderText" onClick={handleViewMore}>

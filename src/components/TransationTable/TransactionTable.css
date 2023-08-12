@@ -37,7 +37,7 @@
   height: 3.5vh;
   padding: 1vh 2vw;
   width: 80vw;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
   color: #f7fae8;
   align-items: center;
   margin-top: 1vh;
@@ -67,4 +67,19 @@
 .link {
   color: white;
   text-decoration: none;
+}
+
+.transCont {
+  padding-top: 4vh;
+  background-color: #151515;
+}
+
+.transactionDetails {
+  background-color: #1e1e1e;
+  width: 75.5vw;
+  padding: 2vh;
+  color: white;
+  transition: 1s ease-in-out;
+  font-size: 3vw;
+  border-radius: 0 0 4px 4px;
 }
