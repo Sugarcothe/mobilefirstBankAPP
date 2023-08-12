@@ -9,6 +9,7 @@ const Register = () => {
     <div className="container">
       <div className="logo">
         <Logo />
+        <h3>BlackWallet</h3>
         <p className="logoText">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
           sequi quia consequuntur dolore architecto. Quasi, porro exercitationem
@@ -30,11 +31,16 @@ const Register = () => {
           <Link className="inputLink" to="/">
             <p>Login Now</p>
           </Link>
-          <p>Forgot Password?</p>
+          <p className="inputLink">Forgot Password?</p>
         </div>
         <Link className="inputBtn" to="/Dashboard">
           Login
         </Link>
+
+        {/* <p className="warning">
+          This is for learning purpose and should not adopted or copied without
+          permission
+        </p> */}
       </div>
     </div>
   );

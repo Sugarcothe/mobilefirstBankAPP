@@ -13,7 +13,7 @@
   align-items: center;
   padding: 10vh 0 5vh 0;
   background-color: #151515;
-  color: #ffffef;
+  color: white;
   height: 20vh;
 }
 
@@ -23,6 +23,8 @@
   text-align: center;
   padding-inline: 3vw;
   font-size: 3.5vw;
+  padding: 2vh 0;
+  width: 80vw;
 }
 
 .input {
@@ -38,22 +40,26 @@
 .inputForm {
   height: 4vh;
   border: 1px solid #151515;
+  color: #151515;
   padding: 5px;
 }
 
 .inputspan {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 4vh;
   font-size: 3vw;
+  color: white;
+  padding: 2vh 0;
+  align-items: center;
 }
 
 .inputBtn {
-  background-color: #151515;
+  background-color: #1e1e1e;
   color: #ffffef;
   font-size: 4vw;
   margin-top: 1vh;
-  border: 1px solid #151515;
+  border: 1px solid #1e1e1e;
   padding: 1.5vh 2vw;
   font-weight: 900;
   display: flex;
@@ -64,7 +70,7 @@
 
 .inputLink {
   text-decoration: none;
-  color: #151515;
+  color: white;
   width: 90vw;
 }
 
@@ -72,4 +78,14 @@ Link {
   text-decoration: none;
   color: #151515;
   width: 90vw;
+}
+
+.warning {
+  text-align: center;
+  font-size: 13px;
+  text-align: center;
+  position: fixed;
+  bottom: 4vh;
+  color: #ffffef;
+  width: 80vw;
 }

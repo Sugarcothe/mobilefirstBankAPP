@@ -14,12 +14,12 @@
   justify-content: center;
   align-items: center;
   padding: 10vh 0 5vh 0;
-  background-color: #151515;
+  background-color: #4d6e37;
   color: #ffffef;
   height: 20vh;
 }
 
-/* #151515; */
+/* #4d6e37; */
 
 .logoText {
   text-align: center;
@@ -29,7 +29,7 @@
 
 .input {
   padding: 4vh 0 2vh 0;
-  color: #151515;
+  color: #4d6e37;
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -38,8 +38,8 @@
 }
 
 .inputForm {
-  /* height: 4vh; */
-  border: 1px solid #151515;
+  height: 4vh;
+  border: 1px solid #4d6e37;
   padding: 5px;
 }
 
@@ -51,11 +51,11 @@
 }
 
 .inputBtn {
-  background-color: #151515;
+  background-color: #4d6e37;
   color: #ffffef;
   font-size: 4vw;
   margin-top: 1vh;
-  border: 1px solid #151515;
+  border: 1px solid #4d6e37;
   padding: 1.5vh 2vw;
   font-weight: 900;
   display: flex;
@@ -66,17 +66,6 @@
 
 .link {
   text-decoration: none;
-  color: #151515;
-  width: 90vw;
-}
-
-.warning {
-  text-align: center;
-  font-size: 13px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
   color: #4d6e37;
-  width: 80vw;
-  padding-bottom: 4vh;
+  width: 90vw;
 }

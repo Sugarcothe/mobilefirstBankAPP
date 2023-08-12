@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.css";
+import '../Register/Register.css'
 import Logo from "../assets/Logo/Logo";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const Login = () => {
     <div className="container">
       <div className="logo">
         <Logo />
-        <h3>Whallete</h3>
+        <h3>BlackWallet</h3>
         <p className="logoText">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
           sequi quia consequuntur dolore architecto. Quasi, porro exercitationem
@@ -28,7 +28,10 @@ const Login = () => {
           Login
         </Link>
       </div>
-      <p className="warning">This is for learning purpose and should not adopted or copied without permission</p>
+      <p className="warning">
+        This is for learning purpose and should not adopted or copied without
+        permission
+      </p>
     </div>
   );
 };
