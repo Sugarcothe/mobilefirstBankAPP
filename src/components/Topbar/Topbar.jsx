@@ -1,7 +1,21 @@
-import { List, AccountBalanceWallet, Person, Menu, CreditCard, AccountBalance, PieChart, Money, Savings, Chat } from "@mui/icons-material";
+import {
+  List,
+  AccountBalanceWallet,
+  Person,
+  Menu,
+  CreditCard,
+  AccountBalance,
+  PieChart,
+  Money,
+  Savings,
+  Chat,
+  VolunteerActivism,
+  HomeRepairService,
+} from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Topbar.css";
-import john from '../assets/img/john.png'
+import john from "../assets/img/john.png";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -37,30 +51,47 @@ const Topbar = () => {
         </div>
         <div className="navMenu">
           <h1 className="navMenuHeader">Menu</h1>
-          <div className="navMenuItem">
-            <CreditCard />
-            <li>Card</li>
-          </div>
-          <div className="navMenuItem">
-            <AccountBalance />
-            <li>Transaction</li>
-          </div>
-          <div className="navMenuItem">
-            <PieChart />
-            <li>Transactions</li>
-          </div>
-          <div className="navMenuItem">
-            <Money />
-            <li>Financial Analytics</li>
-          </div>
-          <div className="navMenuItem">
-            <Chat />
-            <li>Customer Care</li>
-          </div>
-          <div className="navMenuItem">
-            <Savings />
-            <li>Savings</li>
-          </div>
+          <Link className="link" to="/CardPage">
+            <div className="navMenuItem">
+              <CreditCard />
+              <li>Cards</li>
+            </div>
+          </Link>
+
+          <Link className="link" to="/Transactions">
+            <div className="navMenuItem">
+              <PieChart />
+              <li>Transactions</li>
+            </div>
+          </Link>
+
+          <Link className="link" to="/CustomerCare">
+            <div className="navMenuItem">
+              <Chat />
+              <li>Customer Care</li>
+            </div>
+          </Link>
+
+          <Link className="link" to="/Savings">
+            <div className="navMenuItem">
+              <Savings />
+              <li>Savings</li>
+            </div>
+          </Link>
+
+          <Link className="link" to="/Donation">
+            <div className="navMenuItem">
+              <VolunteerActivism />
+              <li>Donation</li>
+            </div>
+          </Link>
+
+          <Link className="link" to="/Bills">
+            <div className="navMenuItem">
+              <HomeRepairService />
+              <li>Bills</li>
+            </div>
+          </Link>
         </div>
 
         {/* Add more list items as needed */}

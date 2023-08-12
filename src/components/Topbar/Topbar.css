@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #1f332c;
+  background-color: #151515;
   width: 100vw;
   height: 7vh;
   position: fixed;
@@ -21,7 +21,7 @@
   left: -300px; /* Start hidden */
   width: 300px;
   height: 100%;
-  background-color: #1f332c;
+  background-color: #151515;
   color: white;
   transition: transform 0.3s ease-in-out;
   z-index: 1;
@@ -43,8 +43,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: #d5ec62;
-  color: #1f332c;
+  background-color: #1e1e1e;
+  color: white;
   gap: 2vh;
   margin-top: 2vh;
 }

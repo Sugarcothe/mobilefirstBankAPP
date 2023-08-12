@@ -126,3 +126,8 @@
   padding: 4vh 2vh 0 2vh;
   align-items: center;
 }
+
+.link {
+  color: white;
+  text-decoration: none;
+}

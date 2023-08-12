@@ -3,6 +3,7 @@ import Topbar from "../Topbar/Topbar";
 import AccountCard from "../AccountCard/AccountCard";
 import TransactionTable from "../TransationTable/TransactionTable";
 import Footbar from "../Footbar/Footbar";
+import './Dashboard.css'
 
 const analyticCard = [
   {
