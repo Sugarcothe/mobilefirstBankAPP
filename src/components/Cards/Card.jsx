@@ -10,7 +10,7 @@ export const  MasterCard = (props) => {
     <>
       <div className="ccontainer">
         <div className="creditcard">
-          <div className={props.front}>
+          <div className="front">
             <div className="frontImg">
               <div className="cardlogos">
                 <img className="cardchip" src={chip} alt="visa" />
@@ -32,7 +32,7 @@ export const  MasterCard = (props) => {
             </div>
           </div>
 
-          <div className={props.front}>
+          <div className="back">
             <div className="creditvce">
               <span className="creditcardvce"></span>
               <p>124</p>
