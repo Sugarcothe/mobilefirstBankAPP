@@ -1,0 +1,78 @@
+.donContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  padding: 2vh;
+  border-radius: 5px;
+  margin-top: 5vh;
+  /* position: fixed;
+  right: calc((100vw - 90%)/2);
+  margin: auto; */
+}
+
+.donContHeader {
+  color: white;
+}
+
+.donContainerInput {
+  width: 70vw;
+  padding: 2px;
+  height: 3vh;
+}
+
+.donContainerInputBtn {
+  color: "white";
+  background-color: #1e1e1e;
+  width: 72vw;
+  border-radius: 3px;
+}
+
+.donCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  text-align: center;
+  position: sticky;
+  top: 100px; /* Adjust the value based on your layout */
+  /* z-index: 1; */
+  gap: 1vh;
+  overflow: scroll;
+}
+
+.donCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 1vh;
+  width: 90vw;
+  /* gap: 2rem; */
+}
+
+.donCardImg {
+  width: 20vw;
+}
+
+.donCardInfo {
+  color: white;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  j */
+}
+
+.donCardInfoHeader {
+  font-size: 4vw;
+}
+
+.donCardInfoText {
+  font-size: 2.5vw;
+}
