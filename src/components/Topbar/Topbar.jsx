@@ -11,6 +11,7 @@ import {
   Chat,
   VolunteerActivism,
   HomeRepairService,
+  Dashboard,
 } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Topbar.css";
@@ -51,6 +52,12 @@ const Topbar = () => {
         </div>
         <div className="navMenu">
           <h1 className="navMenuHeader">Menu</h1>
+          <Link className="link" to="/Dashboard">
+            <div className="navMenuItem">
+              <Dashboard/>
+              <li>Dashboard</li>
+            </div>
+          </Link>
           <Link className="link" to="/CardsPage">
             <div className="navMenuItem">
               <CreditCard />

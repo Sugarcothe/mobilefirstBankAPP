@@ -6,6 +6,7 @@ import wify from "../assets/img/wifi.png";
 import tithe from "../assets/img/winners.png";
 import paddy from "../assets/img/paddy.png";
 import elect from "../assets/img/elect.png";
+import { Link } from "react-router-dom";
 
 const tranData = [
   {
@@ -53,23 +54,23 @@ const tranData = [
 ];
 
 const TransactionTable = () => {
-  const initialTransactionsToShow = 3;
+  const initialTransactionsToShow = 2;
   const [transactionsToShow, setTransactionsToShow] = useState(
     initialTransactionsToShow
   );
 
   const handleViewMore = () => {
-    setTransactionsToShow(transactionsToShow + 3); // Increase by the desired number
+    setTransactionsToShow(transactionsToShow + 2); // Increase by the desired number
   };
 
   return (
     <>
       <div className="notificationcontainer">
         <div className="notificationHeader">
-          <h1 className="notificationHeader1">Transactions</h1>
-          <button className="notificationHeaderText" onClick={handleViewMore}>
-            View More
-          </button>
+          <h1 className="notificationHeader1">Latest Transactions</h1>
+          <Link className="link" to="/Transactions">
+            <button className="notificationHeaderText">View More</button>
+          </Link>
         </div>
 
         {tranData.slice(0, transactionsToShow).map((d, index) => (

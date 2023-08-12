@@ -9,12 +9,12 @@ const CardsPage = () => {
       <div className="container">
         <Topbar />
 
-        <div className="cardReqContainer">
+        {/* <div className="cardReqContainer">
           <p className="cardReqText">
             Click the button below to request for a credit card
           </p>
           <button className="cardReqBtn">Reguest for Card</button>
-        </div>
+        </div> */}
         <VisaCard />
         <MasterCard />
         <Verve />

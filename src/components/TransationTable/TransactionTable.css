@@ -16,7 +16,7 @@
 }
 
 .notificationHeader1 {
-  font-size: 5vw;
+  font-size: 4vw;
   color: white;
 }
 
@@ -62,4 +62,9 @@
   width: 8vw;
   border-radius: 5px;
   object-fit: cover;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
 }

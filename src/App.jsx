@@ -7,7 +7,7 @@ import Bills from "./components/Bills/Bills";
 import CustomerCare from "./components/CustomerCare/CustomerCare";
 import Donation from "./components/Donation/Donation";
 import Settings from "./components/Settings/Settings";
-import Transactions from "./components/Transactions/Transactions";
+import Transactions from "./components/TransationTable/Transactions";
 import CardsPage from "./components/Cards/CardsPage";
 
 function App() {

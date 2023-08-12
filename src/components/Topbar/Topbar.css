@@ -9,6 +9,7 @@
   top: 0;
   z-index: 1;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 4vh;
 }
 
 .navOpen {
@@ -83,4 +84,8 @@ li {
   justify-content: left;
   align-items: center;
   gap: 4vw;
+}
+
+.transCont {
+  padding-top: 4vh;
 }
