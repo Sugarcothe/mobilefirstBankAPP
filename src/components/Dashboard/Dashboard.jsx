@@ -1,9 +1,9 @@
-import { VisaCard } from "../Cards/Card";
+import { MasterCard, VisaCard } from "../Cards/Card";
 import Topbar from "../Topbar/Topbar";
 import AccountCard from "../AccountCard/AccountCard";
 import TransactionTable from "../TransationTable/TransactionTable";
 import Footbar from "../Footbar/Footbar";
-import './Dashboard.css'
+import "./Dashboard.css";
 
 const analyticCard = [
   {
@@ -29,9 +29,9 @@ const Dashboard = () => {
       <div className="container">
         <Topbar />
         <AccountCard />
-        <VisaCard />
-        <TransactionTable/>
-        <Footbar/>
+        <MasterCard front="front" />
+        <TransactionTable />
+        <Footbar />
       </div>
     </>
   );

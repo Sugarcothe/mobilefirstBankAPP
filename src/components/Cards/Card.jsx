@@ -5,12 +5,12 @@ import chip from "../assets/img/chip1-removebg-preview.png";
 
 import "./Card.css";
 
-export const  MasterCard = () => {
+export const  MasterCard = (props) => {
   return (
     <>
       <div className="ccontainer">
         <div className="creditcard">
-          <div className="front">
+          <div className={props.front}>
             <div className="frontImg">
               <div className="cardlogos">
                 <img className="cardchip" src={chip} alt="visa" />
@@ -32,7 +32,7 @@ export const  MasterCard = () => {
             </div>
           </div>
 
-          <div className="back">
+          <div className={props.front}>
             <div className="creditvce">
               <span className="creditcardvce"></span>
               <p>124</p>
