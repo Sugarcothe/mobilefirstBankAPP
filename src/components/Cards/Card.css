@@ -64,6 +64,11 @@
   transform: rotateY(180deg);
 }
 
+.back1 {
+  transform: rotateY(180deg);
+}
+
+
 .ccontainer:hover .creditcard {
   transform: rotateY(-180deg);
 }
