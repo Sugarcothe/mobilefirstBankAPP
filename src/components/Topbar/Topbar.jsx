@@ -1,17 +1,14 @@
 import {
   List,
   AccountBalanceWallet,
-  Person,
-  Menu,
   CreditCard,
-  AccountBalance,
   PieChart,
-  Money,
-  Savings,
   Chat,
   VolunteerActivism,
   HomeRepairService,
   Dashboard,
+  Outbound,
+  LogoutTwoTone,
 } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Topbar.css";
@@ -54,7 +51,7 @@ const Topbar = () => {
           <h1 className="navMenuHeader">Menu</h1>
           <Link className="link" to="/Dashboard">
             <div className="navMenuItem">
-              <Dashboard/>
+              <Dashboard />
               <li>Dashboard</li>
             </div>
           </Link>
@@ -93,10 +90,10 @@ const Topbar = () => {
             </div>
           </Link>
 
-          <Link className="link" to="/Bills">
+          <Link className="link" to="/">
             <div className="navMenuItem">
-              <HomeRepairService />
-              <li>Bills</li>
+              <LogoutTwoTone />
+              <li>Logout</li>
             </div>
           </Link>
         </div>

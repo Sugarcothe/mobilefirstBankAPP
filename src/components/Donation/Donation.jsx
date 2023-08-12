@@ -115,6 +115,10 @@ const donateData = [
     course: "Expand our shelter's capacity to help more people",
     target: "$15000",
     raised: "$5200",
+    author: "Val Eze",
+    Organ: "Personal",
+    details:
+      "We aim to provide shelter and support for homeless individuals homeless individuals, omeless individuals...",
   },
   {
     img: animals,
@@ -123,6 +127,10 @@ const donateData = [
     course: "Educate the public about the impact of climate change",
     target: "$3000",
     raised: "$880",
+    author: "John Doe",
+    Organ: "WHO",
+    details:
+      "We aim to provide shelter and support for homeless individuals homeless individuals, omeless individuals...",
   },
   {
     img: education,
@@ -131,6 +139,10 @@ const donateData = [
     course: "Give bright students a chance to pursue higher education",
     target: "$20000",
     raised: "$7310",
+    author: "Alan Chigozie",
+    Organ: "None",
+    details:
+      "We aim to provide shelter and support for homeless individuals homeless individuals, omeless individuals...",
   },
   {
     img: cat,
@@ -139,6 +151,10 @@ const donateData = [
     course: "Promote pet adoption and animal welfare",
     target: "$5000",
     raised: "$2190",
+    author: "Elon Musk",
+    Organ: "Tesla",
+    details:
+      "We aim to provide shelter and support for homeless individuals homeless individuals, omeless individuals...",
   },
   {
     img: elderly,
@@ -147,6 +163,10 @@ const donateData = [
     course: "Help individuals in medical emergencies access care",
     target: "$10000",
     raised: "$3950",
+    author: "Simon Peter",
+    Organ: "Personal",
+    details:
+      "We aim to provide shelter and support for homeless individuals homeless individuals, omeless individuals...",
   },
 ];
 
@@ -177,15 +197,27 @@ const Donation = () => {
                 key={d.target}
                 onClick={() => setSelectedCard(d)}
               >
-                <img className="donCardImg" src={d.img} alt="" />
-                <div className="donCardInfo">
-                  <h1 className="donCardInfoHeader">{d.capt}</h1>
-                  <p className="donCardInfoText">{d.Header}</p>
+                <div className="donCardTop">
+                  <img className="donCardImg" src={d.img} alt="" />
+                  <div className="donCardInfo">
+                    <h1 className="donCardInfoHeader">{d.capt}</h1>
+                    <p className="donCardInfoText">{d.Header}</p>
+                  </div>
+                  <div className="donCardInfo">
+                    <h1 className="donCardInfoHeader">TARGET</h1>
+                    <p className="donCardInfoText">$ {d.target}</p>
+                  </div>
                 </div>
-                <div className="donCardInfo">
-                  <h1 className="donCardInfoHeader">TARGET</h1>
-                  <p className="donCardInfoText">$ {d.target}</p>
-                </div>
+
+                {selectedCard === d && (
+                  <div className="donCardDetails">
+                    <p>Author: {d.author}</p>
+                    <p>Organanisation: {d.organ}</p>
+                    <p>Target: {d.target}</p>
+                    <p>Raised: {d.raised}</p>
+                    <p>{d.details}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>

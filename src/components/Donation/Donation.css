@@ -7,8 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  padding: 2vh;
+  /* border: 1px solid white; */
+  padding: 1vh;
   border-radius: 5px;
   margin-top: 5vh;
   /* position: fixed;
@@ -49,12 +49,24 @@
 
 .donCard {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between;
   background-color: #1e1e1e;
   padding: 1vh;
   width: 90vw;
+  justify-content: center;
+  align-items: center; */
   /* gap: 2rem; */
+}
+
+.donCardTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 1vh;
+  width: 90vw;
 }
 
 .donCardImg {
@@ -70,9 +82,19 @@
 }
 
 .donCardInfoHeader {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 .donCardInfoText {
-  font-size: 2.5vw;
+  font-size: 2vw;
+}
+
+.donCardDetails {
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+  /* width: 50vw; */
+  text-align: center;
 }
