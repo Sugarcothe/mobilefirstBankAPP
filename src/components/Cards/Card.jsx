@@ -1,5 +1,6 @@
 import React from "react";
 import visa from "../assets/img/visacard.png";
+import verve from "../assets/img/verve.png";
 import master from "../assets/img/mastercard.png";
 import chip from "../assets/img/chip1-removebg-preview.png";
 
@@ -90,7 +91,54 @@ export const VisaCard = () => {
             </p>
             <div className="creditcardfooter">
               <p>CUSTOMER SIGN</p>
-              <img className="cardlogo" src={master} alt="visa" />
+              <img className="cardlogo" src={visa} alt="visa" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const Verve = () => {
+  return (
+    <>
+      <div className="ccontainer">
+        <div className="creditcard">
+          <div className="front2">
+            {/* <div className="frontImg"> */}
+              <div className="cardlogos">
+                <img className="cardchip" src={chip} alt="visa" />
+                <img className="cardlogo" src={verve} alt="visa" />
+              </div>
+              <div className="cardNum">
+                <num>4352 2150 8252 6420</num>
+              </div>
+              <div className="cardInfo">
+                <div className="cardholder">
+                  <p className="cardholderRole">Card Holder</p>
+                  <h1 className="cardholderName">Valentine EZE</h1>
+                </div>
+                <div className="cardholder">
+                  <p className="cardholderRole">VALID TILL</p>
+                  <h1 className="cardholderName">10 / 25</h1>
+                </div>
+              </div>
+            {/* </div> */}
+          </div>
+
+          <div className="back2">
+            <div className="creditvce">
+              <span className="creditcardvce"></span>
+              <p>124</p>
+            </div>
+            <p className="creditbacktext">
+              This is a designed card using React, not an actual card for
+              transaction.{" "}
+            </p>
+            <div className="creditcardfooter">
+              <p>CUSTOMER SIGN</p>
+              <img className="cardlogo" src={verve} alt="visa" />
             </div>
           </div>
         </div>
