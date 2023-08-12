@@ -51,7 +51,7 @@ const Topbar = () => {
         </div>
         <div className="navMenu">
           <h1 className="navMenuHeader">Menu</h1>
-          <Link className="link" to="/CardPage">
+          <Link className="link" to="/CardsPage">
             <div className="navMenuItem">
               <CreditCard />
               <li>Cards</li>

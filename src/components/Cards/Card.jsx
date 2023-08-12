@@ -57,7 +57,7 @@ export const VisaCard = () => {
     <>
       <div className="ccontainer">
         <div className="creditcard">
-          <div className="front">
+          <div className="front1">
             <div className="frontImg">
               <div className="cardlogos">
                 <img className="cardchip" src={chip} alt="visa" />
@@ -79,7 +79,7 @@ export const VisaCard = () => {
             </div>
           </div>
 
-          <div className="back">
+          <div className="back1">
             <div className="creditvce">
               <span className="creditcardvce"></span>
               <p>124</p>
