@@ -58,3 +58,87 @@
 .transaction {
   font-size: 2.5vw;
 }
+
+/* CREDITCARDFROM */
+.creditCardForm {
+  display: flex;
+  flex-direction: column;
+  width: 83vw;
+  height: 30vh;
+  padding: 0.5vh;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vh;
+}
+
+.cardInfoDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardInfolabels {
+  font-size: 2.5vw;
+}
+
+.cardOtherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2vw;
+  gap: 3vw;
+}
+
+.cardOtherInfos {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputfieldLong {
+  width: 70vw;
+}
+
+.inputfieldShort {
+  width: 30vw;
+}
+
+
+
+input {
+  border: none;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+input:hover {
+  border: none;
+}
+
+.conCardbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  gap: 2vw;
+}
+
+.cardbtn {
+  border: none;
+  background-color: #54514e;
+  text-align: center;
+  padding: 0.8vh;
+}
+.cardbtnCancel {
+  border: none;
+  background-color: #aa400f;
+  text-align: center;
+  padding: 0.8vh;
+}

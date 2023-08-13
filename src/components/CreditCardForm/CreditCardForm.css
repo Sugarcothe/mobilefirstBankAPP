@@ -1,0 +1,48 @@
+/* .credit-card-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.credit-card-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.credit-card-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1e1e1e;
+}
+
+.credit-card-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+.expiry-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-card-form button {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+ */
+
