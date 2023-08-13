@@ -31,14 +31,13 @@ const AccountCard = () => {
   return (
     <>
       <div className="card">
-         {!showCreditCardForm && (
-        <div className="AccountInfo">
-          <div className="accountBal">
-            <p>Total Balance</p>
-            <h1 className="balance">$ 2,562.50</h1>
-          </div>
+        {!showCreditCardForm && (
+          <div className="AccountInfo">
+            <div className="accountBal">
+              <p>Total Balance</p>
+              <h1 className="balance">$ 2,562.50</h1>
+            </div>
 
-         
             <div className="">
               <Add //THIS IS THE ADD BUTTON
                 onClick={toggleCreditCardDropdown && handleAddButtonClick}
@@ -52,16 +51,15 @@ const AccountCard = () => {
                 }}
               />
             </div>
-          
-        </div>
+          </div>
         )}
 
         {showCreditCardForm ? (
           <div className="creditCardForm">
             <form className="credit-card-form">
-              <div className="cardInfo">
+              <div className="cardInfoc">
                 <div className="cardInfoDetails">
-                  <label className="cardInfolabels">Card Number</label>
+                  <label className="cardInfolabels">CARD NUMBER</label>
                   <input
                     className="inputfieldLong"
                     type="text"
@@ -71,7 +69,7 @@ const AccountCard = () => {
                   />
                 </div>
                 <div className="cardInfoDetails">
-                  <label className="cardInfolabels">Card Name</label>
+                  <label className="cardInfolabels">CARD NAME</label>
                   <input
                     className="inputfieldLong"
                     type="text"
@@ -138,51 +136,53 @@ const AccountCard = () => {
             </form>
           </div>
         ) : (
-          <p className="greeting">Good morning, your wallet ID is $John123</p>
+          <>
+            <p className="greeting">Good morning, your wallet ID is $John123</p>
+            <div className="vl"></div>
+            <div className="transBtn">
+              <div className="transDiv">
+                <ArrowDownward
+                  sx={{
+                    background: "#ff396f",
+                    padding: "1vh",
+                    borderRadius: "3px",
+                  }}
+                />
+                <p className="transaction">Withdraw</p>
+              </div>
+              <div className="transDiv">
+                <ArrowForward
+                  sx={{
+                    background: "#1dcc70",
+                    padding: "1vh",
+                    borderRadius: "3px",
+                  }}
+                />
+                <p className="transaction">Send</p>
+              </div>
+              <div className="transDiv">
+                <CreditCard
+                  sx={{
+                    background: "#6236ff",
+                    padding: "1vh",
+                    borderRadius: "3px",
+                  }}
+                />
+                <p className="transaction">Credit Card</p>
+              </div>
+              <div className="transDiv">
+                <CurrencyExchange
+                  sx={{
+                    background: "#2d1f3b",
+                    padding: "1vh",
+                    borderRadius: "3px",
+                  }}
+                />
+                <p className="transaction">Exchange</p>
+              </div>
+            </div>
+          </>
         )}
-        <div className="vl"></div>
-        <div className="transBtn">
-          <div className="transDiv">
-            <ArrowDownward
-              sx={{
-                background: "#ff396f",
-                padding: "1vh",
-                borderRadius: "3px",
-              }}
-            />
-            <p className="transaction">Withdraw</p>
-          </div>
-          <div className="transDiv">
-            <ArrowForward
-              sx={{
-                background: "#1dcc70",
-                padding: "1vh",
-                borderRadius: "3px",
-              }}
-            />
-            <p className="transaction">Send</p>
-          </div>
-          <div className="transDiv">
-            <CreditCard
-              sx={{
-                background: "#6236ff",
-                padding: "1vh",
-                borderRadius: "3px",
-              }}
-            />
-            <p className="transaction">Credit Card</p>
-          </div>
-          <div className="transDiv">
-            <CurrencyExchange
-              sx={{
-                background: "#2d1f3b",
-                padding: "1vh",
-                borderRadius: "3px",
-              }}
-            />
-            <p className="transaction">Exchange</p>
-          </div>
-        </div>
       </div>
     </>
   );
