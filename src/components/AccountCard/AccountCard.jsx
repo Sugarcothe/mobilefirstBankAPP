@@ -5,10 +5,13 @@ import {
   CreditCard,
   CurrencyExchange,
 } from "@mui/icons-material";
-import React from "react";
 import "./AccountCard.css";
+import { useLocation } from "react-router-dom";
 
 const AccountCard = () => {
+  const location = useLocation();
+  const walletId = location.state ? location.state.walletId : "";
+
   return (
     <>
       <div className="card">
@@ -31,6 +34,7 @@ const AccountCard = () => {
             />
           </div>
         </div>
+        <p className="greeting">Good morning, your wallet ID is $John123</p>
         <div className="vl"></div>
         <div className="transBtn">
           <div className="transDiv">

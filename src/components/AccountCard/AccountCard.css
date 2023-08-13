@@ -27,7 +27,12 @@
 }
 
 .balance {
-  font-size: 7vw;
+  font-size: 6vw;
+}
+
+.greeting {
+  font-size: 3vw;
+  color: #e86800;
 }
 
 .vl {

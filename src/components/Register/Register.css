@@ -89,3 +89,9 @@ Link {
   color: #ffffef;
   width: 80vw;
 }
+
+.github {
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bolder;
+}
