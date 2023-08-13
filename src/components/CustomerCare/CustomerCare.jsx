@@ -36,27 +36,31 @@ function CustomerCare() {
 
   return (
     <>
-      <Topbar />
-      <div className="chat-container">
-        <div className="chat-messages">
-          {messages.map((message, index) => (
-            <div key={index} className={`message ${message.sender}`}>
-              {message.text}
-            </div>
-          ))}
+      <div className="container">
+        <Topbar />
+        <div className="chat-container">
+          <div className="chat-messages">
+            {messages.map((message, index) => (
+              <div key={index} className={`message ${message.sender}`}>
+                {message.text}
+              </div>
+            ))}
+          </div>
+          <div className="input-container">
+            <textarea
+              className="textArea"
+              type="text"
+              placeholder="Type you issue..."
+              value={inputText}
+              onChange={handleInputChange}
+            />
+            <button className="chat-btn" onClick={handleSendMessage}>
+              Send
+            </button>
+          </div>
         </div>
-        <div className="input-container">
-          <textarea
-            className="textArea"
-            type="text"
-            placeholder="Type you issue..."
-            value={inputText}
-            onChange={handleInputChange}
-          />
-          <button onClick={handleSendMessage}>Send</button>
-        </div>
+        <Footbar />
       </div>
-      <Footbar />
     </>
   );
 }
