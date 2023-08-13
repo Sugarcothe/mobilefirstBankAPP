@@ -182,6 +182,12 @@ const Donation = () => {
             <h3 className="donContHeader">
               {selectedCard ? selectedCard.capt : ""}
             </h3>
+            <h3 className="donContHeader">
+              Target: {selectedCard ? selectedCard.target : ""}
+            </h3>
+            <h3 className="donContHeader">
+             Organisation: {selectedCard ? selectedCard.Organ : ""}
+            </h3>
             <input
               className="donContainerInput"
               placeholder="$50"
@@ -212,7 +218,7 @@ const Donation = () => {
                 {selectedCard === d && (
                   <div className="donCardDetails">
                     <p>Author: {d.author}</p>
-                    <p>Organanisation: {d.organ}</p>
+                    <p>Organanisation: {d.Organ}</p>
                     <p>Target: {d.target}</p>
                     <p>Raised: {d.raised}</p>
                     <p>{d.details}</p>

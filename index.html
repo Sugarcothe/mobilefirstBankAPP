@@ -1,13 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/blackwallet.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Having money became easier | BlackWallet</title>
+    <title>Everything money became easier | BlackWallet</title>
+
+    <style>
+      /* Common styles for both mobile and desktop */
+      .web-view {
+        display: block; /* Default display for desktop view */
+      }
+
+      .mobile-view {
+        display: none; /* Default display for mobile view */
+      }
+
+      /* Media query for mobile devices */
+      @media screen and (max-width: 800px) {
+        .web-view {
+          display: none; /* Hide for mobile view */
+        }
+
+        .mobile-view {
+          display: block; /* Show for mobile view */
+        }
+      }
+
+      /* Media query for desktop devices */
+      @media screen and (min-width: 801px) {
+        .web-view {
+          display: block; /* Show for desktop view */
+          margin: auto;
+          background-color: #1e1e1e;
+          color: white;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 5px solid saddlebrown;
+        }
+
+        .barcode-img {
+          width: 25vw;
+          height: auto;
+          margin-top: 2vh;
+        }
+
+        .web-header {
+          width: 80vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .hyperlink {
+          color: white;
+          text-decoration: none;
+          margin: 1vh 0;
+        }
+
+        .mobile-view {
+          display: none; /* Hide for desktop view */
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div class="web-view">
+      <div class="web-header">
+        <h1>
+          Use your phone to scan the barcode for viewing; desktop view is
+          unavailable.
+        </h1>
+        <a
+          class="hyperlink"
+          href="https://github.com/Sugarcothe/mobilefirstBankAPP"
+          >Click to View Github Repository</a
+        >
+      </div>
+
+      <img class="barcode-img" src="./blackwallett.png" alt="barcode" />
+    </div>
+    <div class="mobile-view" id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
