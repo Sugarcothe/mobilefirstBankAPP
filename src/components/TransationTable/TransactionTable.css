@@ -75,7 +75,6 @@
   background-color: #151515;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
 
 .transactionDetails {
@@ -95,4 +94,15 @@
   background-color: #1e1e1e;
   border-radius: 1px solid #1e1e1e;
   width: 70vw;
+}
+
+.notificationBtnSubmit {
+  margin-top: 2vh;
+  padding: 1.3vh;
+  color: white;
+  background-color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  width: 50vw;
+  font-weight: bold;
+  border-radius: 5px;
 }

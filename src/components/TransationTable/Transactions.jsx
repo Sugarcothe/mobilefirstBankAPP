@@ -202,7 +202,7 @@ const TransactionTable = () => {
               )}
             </>
           ))}
-          <button className="notificationHeaderText1" onClick={handleViewMore}>
+          <button className="notificationBtnSubmit" onClick={handleViewMore}>
             View More
           </button>
         </div>
